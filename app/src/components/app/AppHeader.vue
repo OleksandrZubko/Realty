@@ -63,7 +63,7 @@ const items = ref([
 </script>
 
 <template>
-  <div class="card">
+  <div class="card" >
     <Menubar :model="items">
       <template #start>
         <svg
@@ -108,14 +108,17 @@ const items = ref([
         </a>
       </template>
       <template #end>
-        <div class="flex items-center gap-2">
+        <!-- <div class="flex items-center gap-2">
           <InputText placeholder="Search" type="text" class="w-32 sm:w-auto" />
           <Avatar
             image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
             shape="circle"
           />
-        </div>
+        </div> -->
       </template>
     </Menubar>
+  </div>
+  <div class="bg-[url('./src/images/background.jpg')] h-[50vh] bg-center bg-cover bg-no-repeat" >
+  <!-- ... -->
   </div>
 </template>
